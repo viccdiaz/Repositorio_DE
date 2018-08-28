@@ -1,2 +1,2 @@
-# Repositorio_DE_G2
+# Repositorio_DE
 Repositorio creado para proyecto DeliverEat!
