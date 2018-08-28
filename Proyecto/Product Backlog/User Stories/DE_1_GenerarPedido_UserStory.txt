@@ -1,0 +1,19 @@
+Generar Pedido
+Yo como cliente quiero realizar un pedido para recibir un pedido en mi domicilio
+
+Criterios de aceptacion
+- Los productos de un pedido deben ser del mismo comercio
+-El volumen del pedido no debe excder el volumen de la mochila del cadete
+-Se debe completar los campos obligatorios: punto de pedido y local adherido
+-Se deben elegir al menos un producto de un comercio
+-El carrito de compras puede quedar en standby
+
+Pruebas de aceptacion
+1-Probar generar un pedido a un comercio adherido (pasa)
+2-Probar generar un pedido a un comercio no adherido (pasa)
+3-Probar generar un pedido sin productos en el carrito (falla)
+4-Probar ingresar un pedido con volumen mayor al volumen de la mochila del cadete (falla)
+5-Probar ingresar un pedido sin los campos obligatorios completos (falla)
+
+
+Story point=5
