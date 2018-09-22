@@ -1,19 +1,17 @@
-Generar Pedido
-Yo como cliente quiero realizar un pedido para recibir un pedido en mi domicilio
+Generar Pedido a comercio adherido
+Yo como cliente quiero realizar un pedido a un comercio adherido para recibirlo en mi domicilio
 
 Criterios de aceptacion
-- Los productos de un pedido deben ser del mismo comercio
--El volumen del pedido no debe excder el volumen de la mochila del cadete
--Se debe completar los campos obligatorios: punto de pedido y local adherido
--Se deben elegir al menos un producto de un comercio
--El carrito de compras puede quedar en standby
+-Se debe indicar la forma de pago, domicilio completo, y horario de entrega.
+-Debe elegir entre recibirlo lo antes posible, o elegir un horario 
+-Se debe indicar con cuanto va a pagar en efectivo
+-En caso de abonar con tarjeta, solo se acepta VISA.
+-Se deben completar los datos obligatorios de la tarjeta: titular, numero, fecha de vencimiento y codigo de seguridad.
+
 
 Pruebas de aceptacion
-1-Probar generar un pedido a un comercio adherido (pasa)
-2-Probar generar un pedido a un comercio no adherido (pasa)
-3-Probar generar un pedido sin productos en el carrito (falla)
-4-Probar ingresar un pedido con volumen mayor al volumen de la mochila del cadete (falla)
-5-Probar ingresar un pedido sin los campos obligatorios completos (falla)
-
+1-Probar generar un pedido a un comercio adherido completando todos los datos obligatorios: forma de pago, horario de entrega, monto en efectivo o datos de tarjeta.(pasa)
+2-Probar realizar un pedido sin ingresar monto en efectivo.
+3-Probar realizar un pedido con tarjeta in ingresar datos obligatorios.
 
 Story point=5
