@@ -1,17 +1,19 @@
 Generar Pedido a comercio adherido
-Yo como cliente quiero realizar un pedido a un comercio adherido para recibirlo en mi domicilio
+Yo como cliente quiero realizar un pedido a un comercio adherido para confirmar efectivamente el mismo
 
 Criterios de aceptacion
 -Se debe indicar la forma de pago, domicilio completo, y horario de entrega.
 -Debe elegir entre recibirlo lo antes posible, o elegir un horario 
--Se debe indicar con cuanto va a pagar en efectivo
+-Se debe indicar con cuanto va a pagar en efectivo, en caso de elegir esa opcion.
 -En caso de abonar con tarjeta, solo se acepta VISA.
+-Si se programa el momento de recepción del pedido, se debe indicar fecha/hora recepción.
 -Se deben completar los datos obligatorios de la tarjeta: titular, numero, fecha de vencimiento y codigo de seguridad.
 
 
 Pruebas de aceptacion
-1-Probar generar un pedido a un comercio adherido completando todos los datos obligatorios: forma de pago, horario de entrega, monto en efectivo o datos de tarjeta.(pasa)
-2-Probar realizar un pedido sin ingresar monto en efectivo.
-3-Probar realizar un pedido con tarjeta in ingresar datos obligatorios.
+1-Probar generar un pedido a un comercio adherido completando todos los datos obligatorios: forma de pago, horario de entrega, monto en efectivo o datos de tarjeta y direccion de entrega.(pasa)
+2-Probar registrar pedido con forma de pago en efectivo sin indicar con cuanto se paga o un monto menor al correspondiente. (Falla)
+3-Probar realizar un pedido con tarjeta in ingresar datos obligatorios(falla)
+4-Probar registrar pedido programando momento de recepción del pedido. (Pasa)
 
 Story point=5

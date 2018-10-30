@@ -1,0 +1,23 @@
+Realizar un Pedido de "lo que sea"
+Yo como usuario quiero hacer un pedido “de lo que sea” para adquirir un producto que no esté disponible en los comercios adheridos.
+
+Notas:
+-Se debe agregar una descripción del producto.
+-Opcionalmente se puede agregar una imagen descriptiva sobre el producto a pedir.
+-Se debe indicar la dirección de origen y de destino, especificando:  calle, altura y, piso y departamento, de ser necesario.
+-Por defecto el tiempo de envío es “lo antes posible” pero se puede programar la hora de envío.
+-Existen sólo dos formas de pago: efectivo y VISA.
+-En caso de ser efectivo el medio de pago, se debe ingresar el monto del producto y con cuanto se va a abonar.
+-El costo de envío es fijo y de 30 pesos.
+
+Pruebas de aceptacion
+1-Probar generar un pedido ingresando: descripción del producto, calle y número de origen y de destino, hora de entrega y medio de pago:
+ efectivo, señalado el precio
+del producto y con cuanto se va a abonar (pasa).
+2-Probar hacer un pedido sin describir el producto (falla).
+3-Probar hacer un pedido sin especificar calle y numero, del origen y destino (falla).
+4-robar hacer un pedido sin especificar piso y/o departamento de origen y/o destino
+(pasa).
+5-Probar pagar con una tarjeta que no sea VISA (falla).
+6-Probar pagar con un monto inferior al cargo total (falla).
+7-Probar pagar con una tarjeta sin completar todos los datos (falla).
